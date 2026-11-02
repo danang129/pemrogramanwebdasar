@@ -485,3 +485,61 @@ img {
     bottom: 0.75rem;
   }
 }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 20px; 
+    margin: 0;
+}
+
+.l-header {
+    grid-area: header;
+    width: 100%;
+}
+
+/* Ketentuan 3: Sidebar / Aside */
+.l-aside {
+    grid-area: sidebar;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.aside__text {
+    font-size: 0.938rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.l-main {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+.skills__flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.skills__data {
+    flex: 1 1 140px; 
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+
+#sidik-jari {
+    font-weight: bold;
+}
